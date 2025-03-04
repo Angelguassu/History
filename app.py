@@ -5,7 +5,7 @@ import google.generativeai as gemini
 app = Flask(__name__)
 CORS(app)
 
-gemini.configure(api_key="AIzaSyAogp0lG6T4Q_8fpubHoUOYF02zcyTNPXY")
+gemini.configure(api_key="SUA_CHAVE_API_GOOGLESTUDIO")
 model = gemini.GenerativeModel('gemini-1.5-flash')
 
 @app.route('/historia', methods=['POST'])
